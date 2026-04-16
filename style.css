@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #434343;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    color: yellow;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.45);
+}
+
+
+.container {
+    width: min(100%, 430px);
+    margin: auto;
+    background: #ff5b5f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px 10px;
+}
+
+.logo {
+    width: 78px;
+    display: block;
+}
+
+.burger {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 1;
+    color: #101010;
+}
+
+
+
+
+#menu {
+    display: none;
+    flex-direction: column;
+    padding: 0 18px 14px;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    background: #d83f44;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+
+
+
+.hero-home {
+    text-align: center;
+    padding: 46px 22px 36px;
+}
+
+.hero-copy {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.frontpage .hero-title {
+    margin-bottom: 20px;
+}
+
+.frontpage .hero-title-logo {
+    width: min(100%, 250px);
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.hero-intro,
+.hero-text {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 auto 14px;
+}
+
+.hero-text {
+    margin-bottom: 28px;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    margin: 6px 0 22px;
+}
+
+.hero-cards {
+    width: min(100%, 220px);
+    display: block;
+}
+
+.download-cta {
+    display: grid;
+    gap: 12px;
+    justify-items: center;
+}
+
+.download-link {
+    color: yellow;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-size: 0.95rem;
+}
+
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttons img {
+    height: 42px;
+    width: auto;
+    display: block;
+}
+
+
+
+
+.story-section {
+    padding: 22px 22px 52px;
+    text-align: center;
+}
+
+.story-section h2 {
+    margin-bottom: 18px;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.story-section h3 {
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 0.5;
+}
+.story-section p {
+    line-height: 1.7;
+    color: #ffffff;
+    font-size: 1rem;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.story-visual {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.story-logo {
+    width: min(100%, 200px);
+    display: block;
+}
+
+
+.rules-page .rules-main {
+    padding: 8px 16px 0;
+}
+
+.rules-page .rules-hero {
+    text-align: center;
+    padding: 10px 0 18px;
+}
+
+.rules-page .rules-title {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.rules-page .rules-content {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 28px;
+}
+
+.rules-page .rules-block {
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.rules-page .rules-block h2 {
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+.rules-page .rules-block p,
+.rules-page .rules-list {
+    color: #ffffff;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.rules-page .rules-block p + p {
+    margin-top: 8px;
+}
+
+.rules-page .rules-list {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+
+.rules-page .rules-list li + li {
+    margin-top: 6px;
+}
+
+.rules-page .rules-visual {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 4px;
+}
+
+.rules-page .rules-cards {
+    width: min(58%, 180px);
+    display: block;
+    transform: translateX(22px) translateY(8px);
+}
+
+
+
+
+
+
+footer {
+    margin-top: auto;
+    background: #d64549;
+    padding: 26px 18px 30px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+footer .buttons {
+    justify-content: center;
+    margin-top: 16px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .container {
+        width: min(92vw, 1100px);
+    }
+
+    .site-header {
+        padding: 24px 34px 14px;
+    }
+
+    .logo {
+        width: 96px;
+    }
+
+    .hero-home {
+        padding: 68px 40px 48px;
+    }
+
+    .hero-copy {
+        max-width: 780px;
+    }
+
+    .frontpage .hero-title-logo {
+        width: min(100%, 360px);
+    }
+
+    .hero-intro,
+    .hero-text {
+        max-width: 760px;
+        font-size: 1.25rem;
+    }
+
+    .hero-visual {
+        margin: 16px 0 30px;
+    }
+
+    .hero-cards {
+        width: min(100%, 320px);
+    }
+
+    .download-cta {
+        justify-items: center;
+    }
+
+    .download-link {
+        font-size: 1.05rem;
+    }
+
+    .buttons {
+        gap: 14px;
+    }
+
+    .buttons img {
+        height: 44px;
+    }
+
+    .story-section {
+        padding: 48px 40px 64px;
+    }
+
+    .story-section h2 {
+        font-size: 3rem;
+    }
+
+    .story-section p {
+        max-width: 780px;
+        font-size: 1.12rem;
+    }
+
+    .story-visual {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .story-logo {
+        width: min(100%, 240px);
+    }
+
+    .rules-page .rules-main {
+        padding: 24px 40px 0;
+    }
+
+    .rules-page .rules-title {
+        font-size: 3rem;
+    }
+
+    .rules-page .rules-content {
+        max-width: 760px;
+        margin: 0 auto;
+        gap: 26px;
+    }
+
+    .rules-page .rules-block {
+        max-width: 760px;
+    }
+
+    .rules-page .rules-block h2 {
+        font-size: 1.4rem;
+    }
+
+    .rules-page .rules-block p,
+    .rules-page .rules-list {
+        font-size: 1.05rem;
+    }
+
+    .rules-page .rules-cards {
+        width: min(36%, 240px);
+        transform: translateX(24px) translateY(10px);
+    }
+
+
+    .burger {
+        display: none;
+    }
+
+    #menu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 34px 18px;
+        flex-wrap: wrap;
+    }
+
+    #menu a {
+        margin: 0;
+        padding: 10px 16px;
+        background: transparent;
+        border: 0;
+    }
+}
+
+#searchInput {
+    width: 50%;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.faq-item {
+    margin: 10px 0;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 12px;
+    background: #ffd6d6;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    background: #ffeaea;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 5px;
+    color: #101010;
+}
+
+
+@media (min-width: 1024px) {
+
+    .container {
+        max-width: 1180px;
+    }
+
+    .hero-home {
+        padding: 78px 70px 56px;
+    }
+
+    .story-section {
+        padding: 58px 70px 82px;
+    }
+
+    footer {
+        padding: 34px 52px 38px;
+    }
+}
+
